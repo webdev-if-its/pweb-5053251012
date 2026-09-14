@@ -18,9 +18,9 @@ Baca SOAL.md untuk urutan levelnya. */
 
 .kotak {
    background-color: #eef7ee;
-   padding: 20px;
-   border: 2px black;
-   margin: 30px;
+   padding: 20rem;
+   border: 2rem black;
+   margin: 30rem;
 }
 
 /* Level 4 — TODO: tambahkan box-sizing: border-box. Biasanya ditulis untuk
@@ -57,11 +57,18 @@ p.pengumuman {
   color: #999999;
 }
 
+#pengumuman-utama {
+   color: red;
+}
+
 /* Level 8 — TODO: font-size di bawah ini pakai px — ganti SEMUA font-size
    di seluruh file ini (termasuk yang kalian tambahkan sendiri di level
    lain) supaya pakai satuan rem, bukan px. */
 h1 {
-  font-size: 32px;
+  font-size: 32rem;
+  color: var(--warna-aksen);
+  background-color: var(--warna-latar);
+  font-size: var(--uk-font);
 }
 
 /* Level 9 — TODO: buat blok :root berisi minimal satu variabel CSS
@@ -69,7 +76,19 @@ h1 {
    itu lewat var(--warna-aksen) di aturan lain pada file ini — bukan cuma
    dideklarasikan tanpa pernah dipakai. */
 
+:root {
+   color: var(--warna-aksen: #2c6e49);
+}
+
 /* Level 10 — TODO: tambahkan @media (prefers-color-scheme: dark) yang
    mengubah TEPAT TIGA variabel dari :root (Level 9) untuk membalik skema
    warna jadi gelap. Jangan menulis ulang seluruh selector lain — cukup
    ubah nilai variabelnya di dalam blok @media ini. */
+
+@media (prefers-color-scheme: dark){
+   :root {
+   --warna-aksen: red;
+   --warna-latar: blue;
+   --uk-font: 20rem;
+   }
+}
