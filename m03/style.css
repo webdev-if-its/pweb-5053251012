@@ -51,14 +51,15 @@ body {
 
 /* Level 6 */
 .kisi {
-  grid-template-columns: repeat(auto, 1fr);
+  display: grid;
+  grid-template-columns: repeat(autp, 3fr);
 }
 
 .kartu-grid {
+  display: grid;
   background-color: #eef7ee;
   border: 1px solid #2c6e49;
-  padding: 1rem;
-}
+  padding: 1rem;}
 
 /* Level 7 */
 
