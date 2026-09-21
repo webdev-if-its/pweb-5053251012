@@ -10,7 +10,8 @@ body {
 /* Level 1 */
 .kartu-flex {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
 }
 
 .kartu {
