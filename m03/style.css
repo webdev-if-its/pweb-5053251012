@@ -58,8 +58,9 @@ body {
 /* Level 6 */
 .kisi {
   display: grid;
-  grid-template-columns: repeat(autp, 3fr);
+  grid-template-columns: repeat(auto, 3fr);
   gap: 10px;
+  grid-template-columns: minmax(auto);
 }
 
 .kartu-grid {
@@ -71,6 +72,9 @@ body {
 }
 
 /* Level 7 */
+.unggulan{
+  grid-column: span 2;
+}
 
 /* Level 8 */
 
