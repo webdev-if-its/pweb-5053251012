@@ -33,11 +33,14 @@ body {
 .sidebar {
   background-color: #f0f0f0;
   padding: 1rem;
+  flex-basis: 250px;
 }
 
 .konten {
   background-color: #ffffff;
   padding: 1rem;
+  flex-shrink: 1;
+  flex-grow: 1;
 }
 
 /* Level 5 */
@@ -48,6 +51,7 @@ body {
 
 /* Level 6 */
 .kisi {
+  grid-template-columns: repeat(auto, 1fr);
 }
 
 .kartu-grid {
